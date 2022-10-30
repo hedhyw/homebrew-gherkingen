@@ -5,21 +5,21 @@
 class Gherkingen < Formula
   desc "BDD tests boilerplate generator for Golang"
   homepage "https://github.com/hedhyw/gherkingen"
-  version "2.3.1"
+  version "2.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hedhyw/gherkingen/releases/download/v2.3.1/gherkingen_darwin_amd64.tar.gz"
-      sha256 "c5979776b866425368d484378ae71d19ee2c39b1a7d045fddd3bc6e714c8cbb8"
+      url "https://github.com/hedhyw/gherkingen/releases/download/v2.4.0/gherkingen_darwin_amd64.tar.gz"
+      sha256 "b5abdfc7b8145ddcf8c6014f2400ca6ef51c0fbcd86463583da6d393e38df6c0"
 
       def install
         bin.install "gherkingen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hedhyw/gherkingen/releases/download/v2.3.1/gherkingen_darwin_arm64.tar.gz"
-      sha256 "d5e99a9813ef0e13984661615e34b5e2343032d84ee569927a31c009d78ce59d"
+      url "https://github.com/hedhyw/gherkingen/releases/download/v2.4.0/gherkingen_darwin_arm64.tar.gz"
+      sha256 "e4ae5fd38a66d5de8384dc816700687c711bcdf41ae7cb42e87842bd3f24d8ad"
 
       def install
         bin.install "gherkingen"
@@ -29,24 +29,24 @@ class Gherkingen < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hedhyw/gherkingen/releases/download/v2.3.1/gherkingen_linux_arm64.tar.gz"
-      sha256 "527cc527c2e200df6d9089b017f77a75cbe0cabfb81b953b6a36719243d51885"
-
-      def install
-        bin.install "gherkingen"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/hedhyw/gherkingen/releases/download/v2.3.1/gherkingen_linux_amd64.tar.gz"
-      sha256 "73ac294b9102df9911360821c82a6579205a1bf3ee6637c5fd8d6b29a71be57f"
+      url "https://github.com/hedhyw/gherkingen/releases/download/v2.4.0/gherkingen_linux_arm64.tar.gz"
+      sha256 "00f4f9e059a030d17ae0e790a06c9799b749f81e8f78f2358bc64975d2f267ec"
 
       def install
         bin.install "gherkingen"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/hedhyw/gherkingen/releases/download/v2.3.1/gherkingen_linux_arm.tar.gz"
-      sha256 "65fbc6a121d8ba0b87136ef363471817e376f2638a0a9f664ffc2a9da6052f4a"
+      url "https://github.com/hedhyw/gherkingen/releases/download/v2.4.0/gherkingen_linux_arm.tar.gz"
+      sha256 "7b36cd05f43428d0a6e42b97032a917a22a706a02e373d27d60ee1ffd7cbbb57"
+
+      def install
+        bin.install "gherkingen"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/hedhyw/gherkingen/releases/download/v2.4.0/gherkingen_linux_amd64.tar.gz"
+      sha256 "01cccdfd6be4ce795972e3bf456927e9be13ef2f00a552592b385ace69a2f37a"
 
       def install
         bin.install "gherkingen"
